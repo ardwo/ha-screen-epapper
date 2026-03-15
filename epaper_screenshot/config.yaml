@@ -13,7 +13,6 @@ map:
   - share
 ports:
   8000/tcp: 8000
-image: "ghcr.io/{github_username}/epaper-screenshot-{arch}"
 options:
   url: "https://example.com"
   username: "your_username"
