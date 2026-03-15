@@ -1,0 +1,26 @@
+name: E-Paper Screenshot
+version: "1.0.1"
+slug: epaper_screenshot
+description: "Takes a screenshot of a Home Assistant dashboard for e-paper displays and exposes it via a web server."
+arch:
+  - armv7
+  - armhf
+  - aarch64
+  - amd64
+  - i386
+init: false
+map:
+  - share
+ports:
+  8000/tcp: 8000
+image: "ghcr.io/{github_username}/epaper-screenshot-{arch}"
+options:
+  url: "https://example.com"
+  username: "your_username"
+  password: "your_password"
+  delay: 300
+schema:
+  url: str
+  username: str
+  password: password
+  delay: int
